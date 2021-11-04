@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*header*/
+
+header{
+    background-color: #3161e0;
+    width: 100%;
+    height: 30vh;
+}
+
+.headbox{
+    margin: 0 10%;
+    height: 100%;
+    position: relative;
+}
+
+.headbox *{
+    display: inline-block;
+}
+
+.logo{
+    vertical-align: middle;
+}
+
+.headnav {
+    height: 100%;
+    vertical-align: middle;
+    line-height: 30vh;
+    text-align: center;
+    padding: 0 15%;
+}
+
+li a, #accedi a{
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 15px; 
+    font-size: 14px;
+}   
+
+li a{
+    color:white;
+}
+
+#accedi{    
+    background-color: white;
+    line-height: 30px;
+    border-radius: 25px;
+}
+
+#accedi a{
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+/*prima "pagina"*/
+
+.bigbox{
+  
+}
