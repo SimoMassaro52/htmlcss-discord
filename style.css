@@ -12,8 +12,8 @@ body{
 
 header{
     background-color: #3161e0;
-    width: 100%;
-    height: 30vh;
+    width: 100vw;
+    height: 14vh;
 }
 
 .headbox{
@@ -33,21 +33,24 @@ header{
 .headnav {
     height: 100%;
     vertical-align: middle;
-    line-height: 30vh;
+    line-height: 14vh;
     text-align: center;
     padding: 0 15%;
 }
 
 li a, #accedi a{
-    cursor: pointer;
-    text-decoration: none;
-    list-style: none;
     margin: 0 15px; 
     font-size: 14px;
 }   
 
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
 li a{
     color:white;
+    
 }
 
 #accedi{    
@@ -62,8 +65,277 @@ li a{
     display: inline-block;
 }
 
-/*prima "pagina"*/
+/*sezione 0*/
 
-.bigbox{
-  
+
+.bigpic{
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+}
+
+.bigpic img{
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.textbox{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    color: white;
+    margin: 0 26%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    padding-top: 10px;
+    line-height: 24px;
+}
+
+.buttonrow{
+    width: 100vw;
+    position: absolute;
+    top: 60%;
+    text-align: center;
+}
+
+.buttonrow a{
+    border-radius: 25px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.buttonrow a:first-child{
+    color: black;
+    background-color: white;
+    width: 190px;
+}
+
+.buttonrow a:nth-child(2){
+    color:white;
+    background-color: black;
+    width: 250px;
+    margin-left: 30px;
+}
+
+/*prima sezione e terza sezione (in main)*/
+
+.picbox{
+    height: 100vh;
+    position: relative;
+}
+
+.picbox img{
+    position: absolute;
+    object-fit: contain;
+}
+
+.picbox #lefty{
+    width: 40%;
+    left: 15%;
+    top: 20%;
+}
+
+.righttextbox{
+    position: absolute;
+    width: 25%;
+    right: 15%;
+    top: 20%;
+}
+
+/*seconda sezione*/
+
+.picbox #righty{
+    width: 40%;
+    right: 15%;
+    top: 20%;
+}
+
+.lefttextbox{
+    position: absolute;
+    width: 25%;
+    left: 15%;
+    top: 20%;
+}
+
+/*quarta sezione*/
+
+.midbox{
+    height: 100vh;
+    text-align: center;
+}
+
+.midtextbox{
+    width: 70%;
+    display: inline-block;
+}
+
+/*mini sezione di coda*/
+
+.tailbutton{
+    text-align: center;
+    height: 50vh;
+}
+
+.tailbutton h2{
+    margin-top: 10vh;
+    background-image: url(images/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    line-height: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 500px;
+}
+
+.bottomrow{
+    width: 100vw;
+    text-align: center;
+}
+
+.bottomrow a{
+    background-color: #8ea1e1;
+    color: white;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    width: 200px;
+}
+
+/*footer*/
+
+footer{
+    height: 85vh;
+    width: 100vw;
+    background-color: #23272a;
+}
+
+.footerbox{
+    height: 100%;
+    width: 78%;
+    display: inline-block;
+    position: relative;
+    margin: 0 10%;
+}
+
+.footerbox span{
+    color: white;
+}
+
+.infobox{
+    position: absolute;
+    width: 25%;
+    left: 0;
+    top: 15%;
+}
+
+.infobox h2{
+    color: #7289da;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+#flag{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+   
+} 
+
+#flag img{
+    height: 12px;
+}
+
+.infobox span{
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.icons{
+    padding-top: 25px;
+}
+
+.icons i{
+    padding: 0 10px;
+    color: white;
+}
+
+.listbox{
+    width: 73%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 70%;
+
+}
+
+.listbox ul li:first-child{
+    color: #7289da;
+}
+
+.listbox ul li{
+    color: white;
+    line-height: 30px;
+}
+
+ul{
+    display: inline-block;
+    padding: 0 20px; 
+}
+
+ul li{
+    list-style: none;
+}
+
+.bottomfooter{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 16vh;
+    vertical-align: middle;
+    line-height: 16vh;
+}
+
+.bottomfooter::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+hr{
+    background-color: #7289da;
+    border-color: #7289da;
+}
+
+.bottomfooter .logo{ 
+    display: inline-block;
+}
+
+#registrati{
+    margin-top: 15px;
+    background-color: #7289da;
+    border-radius: 25px;
+    float: right;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+}
+
+#registrati a{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    width: 100px;
+   
 }
